@@ -1,5 +1,7 @@
-describe("template spec", () => {
+describe("Homepage", () => {
   it("passes", () => {
-    cy.visit("https://example.cypress.io");
+    cy.visit("/");
+
+    cy.contains("hello").should("be.visible");
   });
 });
